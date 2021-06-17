@@ -54,7 +54,7 @@ async def visiting_link(messages):
     :return: nothing, just print url
     """
     start = str(messages).find("url=")  # TODO change it
-    link = str(messages)[start + 5:start + 36]
+    link = str(messages)[start + 5:start + 34] # update URL
     if "'" in link:
         link = link[:-1]
     print(link)
